@@ -1,1 +1,1 @@
-# DenverUnivesity
+# DenverUniversity
