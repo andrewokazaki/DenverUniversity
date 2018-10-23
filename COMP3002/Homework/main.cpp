@@ -12,7 +12,6 @@ try{
 		game.test();  
 	}else{            //run the game 
 		game.run(); 
-		game.test();
 	}
 }catch (std::exception e){
 	std::cerr << "caught: " << e.what() << '\n';
