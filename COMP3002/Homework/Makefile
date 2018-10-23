@@ -1,20 +1,20 @@
 CC = g++
 
-all: main.o 
+all: main.o tickTackToe.o
 	echo "make all"
-	$(CC) main.o -o all
+	$(CC) -std=c++11 main.o tickTackToe.o -o run
 
 tickTackToe: main.o tickTackToe.o
 	echo "make tickTackToe"
 	$(CC) -c main.o tickTackToe.o -o tickTackToe
 
 main.o: main.cpp
-	$(CC) -c main.cpp 
+	$(CC) -c -std=c++11 main.cpp 
 
-tickTackToe.o: 
-	cd
+tickTackToe.o: ./tickTackToe/tickTackToe.cpp
+	$(CC) -c -std=c++11 ./tickTackToe/tickTackToe.cpp
 
 clean: 
-	rm -f *.o all
+	rm -f *.o run
 	cd tickTackToe && make clean
 	echo "DONE with clean"
