@@ -1,7 +1,7 @@
 #include <iostream>
 #include "tickTackToe/tickTackToe.h"
 //test state 
-bool test = true; 
+bool test = false; 
 
 int main() {
 
@@ -12,6 +12,7 @@ try{
 		game.test();  
 	}else{            //run the game 
 		game.run(); 
+		game.test();
 	}
 }catch (std::exception e){
 	std::cerr << "caught: " << e.what() << '\n';
