@@ -1,18 +1,15 @@
 #include <iostream>
 #include "tickTackToe/tickTackToe.h"
-//test state 
-bool test = false; 
+#include "vigenereCipher/vigenereCipher.h"
+#include "test/vigenereCipherTest.h"
 
 int main() {
 
 try{
 	//create new tick tack toe game 
-	boardGame::tickTackToe game;
-	if(test == true){ //test the game
-		game.test();  
-	}else{            //run the game 
-		game.run(); 
-	}
+	cipher::vigenereCipher cipher;
+	test::test_vigenereCipher(cipher);
+	//cipher::run_vigenereCipher(cipher);
 }catch (std::exception e){
 	std::cerr << "caught: " << e.what() << '\n';
 }catch(...){
