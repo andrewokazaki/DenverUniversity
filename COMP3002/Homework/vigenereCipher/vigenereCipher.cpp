@@ -44,12 +44,16 @@ namespace cipher{
     //run the cipher
     void run_vigenereCipher(vigenereCipher& cipher){
         //user input
-        std::string userInput;
-        std::cout << "\nWelcome to the Vigenere Cipher\n";
-        std::cout << "Would you like to encrypt or decrypt?\n";
-        std::cout << "(encrypt/decrypt/run) : ";
-        std::cin >> userInput;
+        //std::string userInput;
+        //std::cout << "\nWelcome to the Vigenere Cipher\n";
+        //std::cout << "Would you like to encrypt or decrypt?\n";
+        //std::cout << "(encrypt/decrypt/run) : ";
+        //std::cin >> userInput;
+        encrypt(cipher);
+        decrypt(cipher);
+        check_file();
         //different choices
+        /*
         if(userInput == "encrypt"){
             encrypt(cipher);
         }else if(userInput == "decrypt"){
@@ -62,7 +66,7 @@ namespace cipher{
         else{ //error state
             std::cout << "\nIncorrect Input\n";
             run_vigenereCipher(cipher);
-        }
+        }*/
     }
 
     //encript the file
