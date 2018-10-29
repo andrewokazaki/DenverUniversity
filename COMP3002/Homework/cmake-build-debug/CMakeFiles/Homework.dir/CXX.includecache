@@ -1,0 +1,28 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/andrewokazaki/Desktop/school/DenverUniversity/COMP3002/Homework/vigenereCipher/vigenereCipher.cpp
+vigenereCipher.h
+/Users/andrewokazaki/Desktop/school/DenverUniversity/COMP3002/Homework/vigenereCipher/vigenereCipher.h
+iostream
+-
+string
+-
+fstream
+-
+stack
+-
+
+/Users/andrewokazaki/Desktop/school/DenverUniversity/COMP3002/Homework/vigenereCipher/vigenereCipher.h
+iostream
+-
+string
+-
+stack
+-
+

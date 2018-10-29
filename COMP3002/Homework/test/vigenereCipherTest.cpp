@@ -34,12 +34,12 @@ namespace test{
         cipher.set_keyLetter('A');
         cipher.set_textLetter('b');
         //std::cout << "key char : " << cipher.get_keyLetter() << std::endl;
-        //std::cout << "text char : " << cipher.get_textLetter() << std::endl;
+        std::cout << "text char : " << cipher.get_textLetter() << std::endl;
 
 
 
-        //std::cout << (int)'b' - (int)cipher::alpha::a - (int)'a'<< std::endl;
-        //std::cout << ((int)'b'-(int)'a')<< std::endl;
+        std::cout << (int)'b' - (int)cipher::alpha::a - (int)'a'<< std::endl;
+        std::cout << ((int)'b'-(int)'a')<< std::endl;
 
 
         std::cout <<"Test : a + y =  z";
@@ -92,9 +92,5 @@ namespace test{
             }
             eoutfile << '\n';
         }
-
-
-
-
     }
 }

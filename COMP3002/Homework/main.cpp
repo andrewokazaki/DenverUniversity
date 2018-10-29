@@ -6,16 +6,15 @@
 int main() {
 
 try{
-	//create new tick tack toe game 
+	//create new cipher
 	cipher::vigenereCipher cipher;
-	test::test_vigenereCipher(cipher);
-	//cipher::run_vigenereCipher(cipher);
+	//test::test_vigenereCipher(cipher); //test
+	cipher::run_vigenereCipher(cipher); //run
 }catch (std::exception e){
 	std::cerr << "caught: " << e.what() << '\n';
 }catch(...){
 	std::cerr << "caught unknown error \n"; 
 }
-
 	std::cout<<"DONE"<<std::endl;
     return 0;
 }
